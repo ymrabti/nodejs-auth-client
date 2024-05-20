@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nodejs-auth-client/static/css/main.3a5ce73a.css",
+    "main.js": "/nodejs-auth-client/static/js/main.b424bdd8.js",
+    "index.html": "/nodejs-auth-client/index.html",
+    "main.3a5ce73a.css.map": "/nodejs-auth-client/static/css/main.3a5ce73a.css.map",
+    "main.b424bdd8.js.map": "/nodejs-auth-client/static/js/main.b424bdd8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a5ce73a.css",
+    "static/js/main.b424bdd8.js"
+  ]
+}
