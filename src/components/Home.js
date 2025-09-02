@@ -6,6 +6,7 @@ import './Home.css';
 import Layout from './layout';
 import { useSelector } from 'react-redux';
 import { baseURL } from '../api';
+import ChatApp from './test';
 
 export function Home() {
     const token = JSON.parse(localStorage.getItem('jwt'))?.tokens.access.token;
@@ -33,9 +34,8 @@ export function Home() {
 
     return (
         <Layout>
+            <ChatApp socket={socket} />
             <div className="chat-container">
-                {process.env.REACT_APP_API_URL}
-                <br />
                 {isUser ? (<>
                     <Messages socket={socket} />
                     <MessageInput socket={socket} />

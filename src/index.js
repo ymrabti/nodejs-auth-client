@@ -5,15 +5,14 @@ import { Provider } from 'react-redux'
 import * as serviceWorker from './serviceWorker'
 import './index.min.css';
 // import { compose, applyMiddleware } from 'redux'
-// import Home from './components/Home';
 // import { thunk } from 'redux-thunk'
 
 import { reducer } from './state/reducers/index'
 import AppRoutes from './routes';
 
 const store = configureStore({
-    reducer: reducer,
     // middleware: compose(applyMiddleware(thunk)),
+    reducer: reducer,
 })
 
 render(

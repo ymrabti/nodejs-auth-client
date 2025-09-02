@@ -17,13 +17,14 @@ const AppRoutes = () => {
     useEffect(() => {
         dispatch(currentUser())
     }, [dispatch])
+    console.log(process.env);
 
     return (
         <UserWrapper>
-            <BrowserRouter>
+            <BrowserRouter basename={`/${process.env.REACT_APP_HOME_PAGE}`}>
                 <Routes>
-                    <Route path={'/'} Component={Home} />
-                    <Route path='*' element={<Redirect to="/" />} />
+                    <Route path='' Component={Home} />
+                    <Route path='*' element={<Redirect to='' />} />
                 </Routes>
             </BrowserRouter>
         </UserWrapper>
