@@ -3,7 +3,6 @@
     "version": "0.1.0",
     "private": false,
     "homepage": "https://ymrabti.github.io/nodejs-auth-client",
-    "api": "https://node-auth-master.youmrabti.com",
     "dependencies": {
         "@reduxjs/toolkit": "^2.2.3",
         "axios": "^1.6.8",
